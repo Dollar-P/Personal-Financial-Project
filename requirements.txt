@@ -1,0 +1,17 @@
+# Inferred from retained source imports; the historical environment was not locked.
+numpy
+pandas
+polars
+pyarrow
+scipy
+scikit-learn
+catboost
+matplotlib
+plotly
+joblib
+python-dateutil
+ipython
+jupyterlab
+nbformat
+nbclient
+ipykernel

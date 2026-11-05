@@ -1,0 +1,415 @@
+[
+  {
+    "source": "Phase 0.ipynb",
+    "cell": 2,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/PAXGUSDTaggTrades/aggTrades-PAXG-2026-01-01-28.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/PAXGUSDTaggTrades/aggTrades-PAXG-2026-01-01-28.parquet"
+  },
+  {
+    "source": "Phase 0.ipynb",
+    "cell": 56,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/PAXGUSDTaggTrades/aggBars-1m-PAXG-2026-01-28.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/PAXGUSDTaggTrades/aggBars-1m-PAXG-2026-01-28.parquet"
+  },
+  {
+    "source": "Phase 1.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2020.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2020.parquet"
+  },
+  {
+    "source": "Phase 1.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2021.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2021.parquet"
+  },
+  {
+    "source": "Phase 1.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2022.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2022.parquet"
+  },
+  {
+    "source": "Phase 1.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2023.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2023.parquet"
+  },
+  {
+    "source": "Phase 1.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2024.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2024.parquet"
+  },
+  {
+    "source": "Phase 1.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2025.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2025.parquet"
+  },
+  {
+    "source": "Phase 1.ipynb",
+    "cell": 25,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/phase_data/phase_1_ETH_1min_Market_Structure_Feature.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/phase_data/phase_1_ETH_1min_Market_Structure_Feature.parquet"
+  },
+  {
+    "source": "Phase 2.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/phase_data/phase_1_ETH_1min_Market_Structure_Feature.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/phase_data/phase_1_ETH_1min_Market_Structure_Feature.parquet"
+  },
+  {
+    "source": "Phase 2.ipynb",
+    "cell": 62,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/phase_data/phase_2-1_ETH_1min_Market_Structure_Behavior_Feature.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/phase_data/phase_2-1_ETH_1min_Market_Structure_Behavior_Feature.parquet"
+  },
+  {
+    "source": "Phase 3.ipynb",
+    "cell": 1,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/phase_data/phase_2-1_ETH_1min_Market_Structure_Behavior_Feature.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/phase_data/phase_2-1_ETH_1min_Market_Structure_Behavior_Feature.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 1,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2020.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2020.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 1,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2021.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2021.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 1,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2022.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2022.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 1,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2023.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2023.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 1,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2024.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2024.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 1,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2025.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2025.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 195,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 198,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 243,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L_climate_state_480.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L_climate_state_480.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 245,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L_climate_state_480.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L_climate_state_480.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 253,
+    "original": "/content/Activity_avgTradeQuote_RunMean_climate_state_1440min.csv",
+    "helper": "output_path",
+    "relative": "Activity_avgTradeQuote_RunMean_climate_state_1440min.csv"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 260,
+    "original": "/content/Activity_avgTradeQuote_RunMean_climate_state_1440min_fwd_ret_fwd_rvol.csv",
+    "helper": "output_path",
+    "relative": "Activity_avgTradeQuote_RunMean_climate_state_1440min_fwd_ret_fwd_rvol.csv"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 273,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/climate_state480_proto60_cluster_summary.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/climate_state480_proto60_cluster_summary.csv"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 279,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L_climate_group_480.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L_climate_group_480.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 314,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L_to_Tree.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L_to_Tree.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 404,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/preds_F1.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/preds_F1.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 404,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/preds_F2.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/preds_F2.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 404,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/preds_F3.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/preds_F3.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 404,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/preds_F4.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/preds_F4.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 412,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/climate_summary_across_folds.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/climate_summary_across_folds.csv"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 416,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/climate_summary_across_folds.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/climate_summary_across_folds.csv"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 435,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L_to_Tree.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L_to_Tree.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 437,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/preds_F1.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/preds_F1.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 437,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/preds_F2.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/preds_F2.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 437,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/preds_F3.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/preds_F3.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 437,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/preds_F4.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/preds_F4.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 444,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/manifold_table.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/manifold_table.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 455,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/manifold_table_z.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/manifold_table_z.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 464,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/manifold_pca_2d.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/manifold_pca_2d.parquet"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 468,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/heatmap_table.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/heatmap_table.csv"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 480,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/cat_v1_data/heatmap_table.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/cat_v1_data/heatmap_table.csv"
+  },
+  {
+    "source": "Micro Structure.ipynb",
+    "cell": 541,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L_to_Tree.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L_to_Tree.parquet"
+  },
+  {
+    "source": "Test_Hit.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L_to_Tree.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L_to_Tree.parquet"
+  },
+  {
+    "source": "Test_Hit.ipynb",
+    "cell": 30,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/canyougivemeonemoreday/hit_pred_fold_CatBoostClassifier_v1.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/canyougivemeonemoreday/hit_pred_fold_CatBoostClassifier_v1.csv"
+  },
+  {
+    "source": "Energy.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/df_q_fixed_L.parquet",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/df_q_fixed_L.parquet"
+  },
+  {
+    "source": "Energy.ipynb",
+    "cell": 33,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/kenetic_energy_pred.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/kenetic_energy_pred.csv"
+  },
+  {
+    "source": "Energy.ipynb",
+    "cell": 87,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/Intensity_pred.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/Intensity_pred.csv"
+  },
+  {
+    "source": "Energy.ipynb",
+    "cell": 91,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/Intensity_pred.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/Intensity_pred.csv"
+  },
+  {
+    "source": "Energy.ipynb",
+    "cell": 127,
+    "original": "/content/drive/MyDrive/LoserToWinner/Micro Structure Behavior/Intensity_pred.csv",
+    "helper": "data_path",
+    "relative": "Micro Structure Behavior/Intensity_pred.csv"
+  },
+  {
+    "source": "baseline/2026-05-10 Clean Code.ipynb",
+    "cell": 3,
+    "original": "C:/Users/Putter/Desktop/Trading Thing/dataset",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars"
+  },
+  {
+    "source": "ALL_FOR_ONE.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2020.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2020.parquet"
+  },
+  {
+    "source": "ALL_FOR_ONE.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2021.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2021.parquet"
+  },
+  {
+    "source": "ALL_FOR_ONE.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2022.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2022.parquet"
+  },
+  {
+    "source": "ALL_FOR_ONE.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2023.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2023.parquet"
+  },
+  {
+    "source": "ALL_FOR_ONE.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2024.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2024.parquet"
+  },
+  {
+    "source": "ALL_FOR_ONE.ipynb",
+    "cell": 0,
+    "original": "/content/drive/MyDrive/LoserToWinner/0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2025.parquet",
+    "helper": "data_path",
+    "relative": "0.Data -> Facts/Binance Vision Data/aggBars/aggBars-1m-ETH-2025.parquet"
+  },
+  {
+    "source": "ALL_FOR_ONE.ipynb",
+    "cell": 269,
+    "original": "/content/drive/MyDrive/regime_lab/walk_forward_result.joblib",
+    "helper": "output_path",
+    "relative": "regime_lab/walk_forward_result.joblib"
+  }
+]
