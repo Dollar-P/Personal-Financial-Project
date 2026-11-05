@@ -1,0 +1,17 @@
+{
+  "microstructure": [
+    "notebooks/microstructure/01_features_and_adaptive_windows.ipynb",
+    "notebooks/microstructure/02_discrete_climate_and_models.ipynb",
+    "notebooks/microstructure/03_continuous_climate.ipynb"
+  ],
+  "barrier_hit": [
+    "notebooks/ml_targets/01_barrier_hit_models.ipynb",
+    "notebooks/ml_targets/02_global_vs_context_models.ipynb"
+  ],
+  "all_for_one": [
+    "notebooks/all_for_one/01_data_state_alignment.ipynb",
+    "notebooks/all_for_one/02_signals_filters_execution.ipynb",
+    "notebooks/all_for_one/03_analytics_and_visualization.ipynb",
+    "notebooks/all_for_one/04_experiments_and_walk_forward.ipynb"
+  ]
+}
