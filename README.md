@@ -1,127 +1,145 @@
 # TradingUni
 
-**Exploring market behavior, predictive modeling, and regime-aware trading through quantitative research.**
+**A quantitative research journey through market microstructure, machine learning, and regime-aware trading.**
 
-TradingUni is a collection of my research notebooks on a central question:
+> **Central question:** *Can a useful description of current market conditions help explain when a predictive model or trading strategy works?*
 
-> **Can a useful description of current market conditions help explain when a model or trading strategy works?**
+TradingUni is my collection of exploratory quantitative research. It starts with **what the market data actually records**, builds features and representations of market behavior, tests hypotheses and predictive targets, and examines how trading-system design and walk-forward evaluation affect the interpretation of historical performance.
 
-Instead of starting and ending with a trading signal, this project investigates what can be observed from market data, how those observations can be represented as features or market contexts, whether they help predict future behavior, and whether any predictive relationship survives a realistic trading simulation.
+This repository is a **curated research archive and educational project—not a verified profitable strategy, investment product, or production trading system**. It preserves original notebook outputs, including inconclusive experiments and historical errors, so the research can be inspected rather than presented as a selection of favorable results.
 
-**Project status:** Curated research archive / ongoing investigation — **not** a verified profitable trading system. This repository preserves selected code, notes, charts, and historical notebook outputs, including inconclusive results and errors. The original market datasets and large intermediate artifacts are not included.
+## Explore the project
 
-## The research at a glance
+| Start here | What you'll find |
+|---|---|
+| **[Interactive Research Textbook V2.2](docs/index.html)** | Self-contained Thai-language textbook, 13 chapters, formulas, source-linked code walkthroughs, interactive examples, and notebook figures. |
+| [13-chapter reading guide](docs/READING_PATH.md) | Recommended path through the research notebooks. |
+| [Research process](docs/RESEARCH_PROCESS.md) | Questions, methods, and relationships visible in the source. |
+| [Evidence and limitations](docs/EVIDENCE_AND_LIMITATIONS.md) | What the historical results and available validation can—and cannot—establish. |
+| [คู่มือโครงการภาษาไทย](docs/PROJECT_GUIDE_TH.md) | Thai-language overview of the curated notebooks. |
+
+**Viewing the textbook:** Download `docs/index.html` and open it in a browser, or enable **GitHub Pages** with `main` → `/docs` to serve it as a website. GitHub's normal repository file view may show the HTML source instead of running the website. See [Publishing & GitHub Pages](docs/PUBLISHING.md). Once published, add your actual Pages URL here; it depends on your repository owner/name.
+
+## Research map
 
 ```text
-                     Observed market data
-                              |
-               Trade events / time-series bars
-                              |
-                  Market facts & features
-                              |
-                 +------------+-------------+
-                 |            |             |
-         Behavior &      Predictive      Trading systems
-         market context  modeling        & backtesting
-                 |            |             |
-         Hypotheses,     Targets,        Signals, states,
-         state geometry  temporal tests  fills, costs
-                 |            |             |
-                 +------------+-------------+
-                              |
-                   Evidence & limitations
+                         MARKET DATA
+                         /         \
+       PAXG aggregated trades      ETH intraday bars / research tables
+             (Phase 0)                       |
+                |                             +-------------------+
+     Trade events → market facts             |                   |
+                |                      Market features      OHLC & timeframes
+                |                             |                   |
+                |                       Behavioral axes     Regime / indicator
+                |                             |                   states
+                |                       Hypothesis tests          |
+                |                             |              Signals / filters
+                |                      Adaptive features          |
+                |                             |             Execution / costs
+                |                     Discrete / continuous       |
+                |                        market climate       Backtesting
+                |                             |                   |
+                +--- distinct research ------+           Walk-forward research
+                             |
+                     ML target experiments
+               (hit / direction / magnitude)
 ```
 
-This is a **conceptual map**, not a claim that every notebook is an automatically runnable pipeline. For example, the trade-to-facts example uses PAXG aggregated trades, while several later investigations use separately prepared ETH one-minute data and intermediate research tables.
+*Conceptual research map, **not** a single verified, automatically executable data pipeline.* The PAXG aggregation example is separate from later ETH-based feature research. The ML and trading branches investigate related questions but are not shown to form one deployed model-to-order system.
 
-### Research directions
+## What I investigated
 
-| Area | Question | Start here |
+| Research area | Question and implementation | Source |
 |---|---|---|
-| **Trade data & market facts** | What happened *inside* a price bar beyond OHLCV? | [Trade events → facts](notebooks/data_facts/01_trade_to_facts.ipynb) |
-| **Behavioral features** | How can activity, volatility, flow, persistence, concentration, and impact be measured? | [Market axes](notebooks/data_facts/02_market_axes.ipynb) |
-| **Hypothesis testing** | Do interpretations of these features correspond to subsequent market behavior? | [Geometry & hypotheses](notebooks/data_facts/04_geometry_and_hypotheses.ipynb) |
-| **Market context** | Should market conditions be represented as discrete states or a continuous space? | [Discrete](notebooks/microstructure/02_discrete_climate_and_models.ipynb) / [continuous](notebooks/microstructure/03_continuous_climate.ipynb) climate |
-| **Machine learning** | Are barrier hits, direction, magnitude, and directional efficiency distinct prediction problems? | [ML targets](notebooks/ml_targets/01_barrier_hit_models.ipynb) |
-| **Trading research** | How do regimes, timing, costs, and walk-forward selection affect strategy evaluation? | [Regime baseline](notebooks/regime_backtesting/01_regime_baseline.ipynb) / [All for One](notebooks/all_for_one/01_data_state_alignment.ipynb) |
+| **Trade events & market facts** | Transform Binance PAXG aggTrades into one-minute bars, including VWAP, activity, directional flow, timing, concentration, sign sequences, sparse-bar gates, and a complete time grid. | [Phase 0](notebooks/data_facts/01_trade_to_facts.ipynb) |
+| **Behavioral features** | Express activity, volatility, flow, persistence, concentration, and impact proxies on raw and relative scales; construct rolling flags and temporal behaviors. | [Market axes](notebooks/data_facts/02_market_axes.ipynb) · [Behavior features](notebooks/data_facts/03_behavior_features.ipynb) |
+| **Hypothesis testing** | Study feature geometry and H1–H7 while auditing what proposed "forward" outcomes actually measure. | [Geometry & hypotheses](notebooks/data_facts/04_geometry_and_hypotheses.ipynb) |
+| **Microstructure & climate** | Explore adaptive windows, discrete market climates, and continuous feature-space methods, including tests affected by sample sparsity. | [Adaptive](notebooks/microstructure/01_features_and_adaptive_windows.ipynb) · [Discrete](notebooks/microstructure/02_discrete_climate_and_models.ipynb) · [Continuous](notebooks/microstructure/03_continuous_climate.ipynb) |
+| **Machine learning targets** | Investigate barrier-hit, global versus context-specific, direction, magnitude, and directional-efficiency tasks. | [Barrier hit](notebooks/ml_targets/01_barrier_hit_models.ipynb) · [Context models](notebooks/ml_targets/02_global_vs_context_models.ipynb) · [Magnitude & direction](notebooks/ml_targets/03_magnitude_and_direction.ipynb) |
+| **Regime-aware backtesting** | Evaluate rule-based Keltner breakout/mean-reversion ideas under regime and transaction-cost assumptions. | [Regime baseline](notebooks/regime_backtesting/01_regime_baseline.ipynb) |
+| **All for One** | Research multi-timeframe states, point-in-time alignment, signals, filters, execution, analytics, and walk-forward candidate selection. | [Data & state](notebooks/all_for_one/01_data_state_alignment.ipynb) · [Execution](notebooks/all_for_one/02_signals_filters_execution.ipynb) · [Analytics](notebooks/all_for_one/03_analytics_and_visualization.ipynb) · [Experiments](notebooks/all_for_one/04_experiments_and_walk_forward.ipynb) |
 
-## What this repository demonstrates
+### Research observations—and why they need qualification
 
-The focus is the *research process*, including its uncertainties, rather than a single headline return:
+- **Trade-to-facts:** A saved PAXG example shows **39,996 observed one-minute bars** and a **40,320-row complete grid** for January 2026. These are **historical notebook outputs**, not data reprocessed for this release.
+- **Discrete climates:** The recorded experiment considered **125 climate combinations**, and none passed all its selection criteria in the historical analysis. Subgroup sample sizes and multiple testing are central concerns; this is **not** a general proof that market context is useless.
+- **Predictive labels:** Some Phase 3 helpers use a pattern equivalent to `shift(-1).rolling_mean(window_size=w)`. A trailing rolling window after shifting does **not** cover the intended full future horizon. Consequently, affected H1–H6 results should **not** be presented as validated forward predictive evidence without reimplementation and rerunning.
+- **Walk-forward:** All for One includes historical candidate-selection and walk-forward results, but saved performance is not a new independent reproduction, and the selection procedure still requires careful bias and execution review.
+- **Code checks:** Six original synthetic tests cover selected alignment, state, signal, filter, fold-generation, and candidate-selection logic. They do **not** validate trading profitability.
 
-- **From events to measurable facts.** Build time-bar price, trade-timing, signed-flow, trade-size, and trade-sequence statistics from aggregated trade records, with explicit data-quality rules.
-- **From intuition to testable hypotheses.** Define what a feature group is expected to explain, and what observations would challenge that interpretation.
-- **From fixed labels to context representations.** Explore adaptive windows, discrete market climates, and continuous feature-space neighborhoods; document statistical and sample-size limitations.
-- **Separate prediction tasks.** Investigate barrier-hit, direction, and magnitude targets rather than conflating price movement with trading profit.
-- **Evaluate strategies as systems.** Combine multi-timeframe indicators, availability-time alignment, Keltner-based signals, fees, slippage, performance analytics, and walk-forward candidate selection.
+For context, source locations, methodological caveats, and detailed explanations, read the [textbook](docs/index.html), particularly its **Research Integrity**, **Chapter 4**, **Chapter 6**, **Chapter 12**, and **Chapter 13** sections.
 
-**A few particularly useful reading points:**
+## Research Textbook — 13 chapters
 
-1. [Feature hypotheses](notebooks/data_facts/04_geometry_and_hypotheses.ipynb): turn a behavioral interpretation into a condition, expected observation, and potential falsification.
-2. [Discrete climate](notebooks/microstructure/02_discrete_climate_and_models.ipynb): original notes describe small subgroup samples and an unsuccessful result under the chosen false-discovery-rate procedure. This is not evidence that the proposed contexts are predictive.
-3. [Continuous climate](notebooks/microstructure/03_continuous_climate.ipynb): explores another representation, including in-sample neighborhood views; it does not establish that continuous climates solve the earlier statistical problem.
-4. [All for One](notebooks/all_for_one/01_data_state_alignment.ipynb): a more integrated research system with basic synthetic checks for timing, signals, filters, and selection logic. Passing these checks does not validate historical trading returns.
+The textbook is primarily in **Thai** with English technical terms, Python identifiers, equations, interactive demonstrations, and links to individual source cells.
 
-## Reading guide
+| Part | Chapter | Topic |
+|---|---|---|
+| Foundations | [01](docs/index.html#ch1) | Understanding TradingUni |
+| Foundations | [02](docs/index.html#ch2) | Trade Events → Market Facts |
+| Foundations | [03](docs/index.html#ch3) | Market Axes & Behavioral Features |
+| Foundations | [04](docs/index.html#ch4) | Geometry & Hypothesis Testing |
+| Microstructure | [05](docs/index.html#ch5) | Adaptive Windows |
+| Microstructure | [06](docs/index.html#ch6) | Discrete Market Climate |
+| Microstructure | [07](docs/index.html#ch7) | Continuous Market Climate |
+| ML | [08](docs/index.html#ch8) | Targets, Models & Experiments |
+| Trading | [09](docs/index.html#ch9) | Regime-Based Trading Baseline |
+| Trading | [10](docs/index.html#ch10) | All for One: Data & State Engines |
+| Trading | [11](docs/index.html#ch11) | All for One: Signals, Execution & Analytics |
+| Trading | [12](docs/index.html#ch12) | All for One: Experiments & Walk-Forward |
+| Synthesis | [13](docs/index.html#ch13) | What Did TradingUni Actually Teach Us? |
 
-If you are new to the repository, read in this order:
-
-1. **[Research learning path — 13 chapters](docs/READING_PATH.md)** for the full narrative, from trade events to walk-forward experiments.
-2. **[Research process](docs/RESEARCH_PROCESS.md)** for the methodology and decisions visible in the source.
-3. **[Research evidence & limitations](docs/EVIDENCE_AND_LIMITATIONS.md)** to distinguish implementation, historical output, and supported conclusions.
-4. **[คู่มือภาษาไทย](docs/PROJECT_GUIDE_TH.md)** for a shorter Thai-language map of the project.
-
-Additional technical references: [data & running](docs/DATA_AND_RUNNING.md), [notebook inventory](docs/NOTEBOOK_INVENTORY.md), [curation decisions](docs/CURATION.md), and [validation notes](docs/VALIDATION.md).
+The website also contains a searchable **Feature Encyclopedia**, **Models & Algorithms**, **Architecture Explorer**, **Evidence Explorer**, **Mathematical Reference**, and **Source Browser**.
 
 ## Repository structure
 
 ```text
-TradingUni/
+.
 ├── README.md
 ├── docs/
+│   ├── index.html               # Self-contained interactive textbook (V2.2)
+│   ├── .nojekyll                # Publish the HTML unchanged with GitHub Pages
+│   ├── PUBLISHING.md           # Instructions for publishing and updating
 │   ├── READING_PATH.md
 │   ├── RESEARCH_PROCESS.md
 │   ├── EVIDENCE_AND_LIMITATIONS.md
-│   ├── PROJECT_GUIDE_TH.md
 │   ├── DATA_AND_RUNNING.md
 │   ├── CURATION.md
-│   ├── NOTEBOOK_INVENTORY.md
 │   ├── VALIDATION.md
-│   ├── path_map.json
-│   └── source_map.json
+│   └── ...
 ├── notebooks/
-│   ├── data_facts/          # 4 notebooks
-│   ├── microstructure/      # 3 consecutive notebook parts
-│   ├── ml_targets/          # 2 consecutive parts + 1 separate notebook
-│   ├── regime_backtesting/  # 1 baseline notebook
-│   └── all_for_one/         # 4 consecutive notebook parts
-├── scripts/                 # structural checks, synthetic checks, series composer
+│   ├── data_facts/             # 4 notebooks
+│   ├── microstructure/         # 3 notebook parts
+│   ├── ml_targets/             # 3 notebooks
+│   ├── regime_backtesting/     # 1 notebook
+│   └── all_for_one/            # 4 notebook parts
+├── scripts/
+│   ├── check_repository.py
+│   ├── run_existing_checks.py
+│   └── run_series.py
 ├── notebook_series.json
 ├── tradinguni_paths.py
 └── requirements.txt
 ```
 
-The release selects **9 source notebooks from 53 originals**, organized into **15 curated notebooks**. Saved outputs are kept intentionally because they help readers follow the original experiments. Some outputs reflect stale kernel state or historical errors. See [curation](docs/CURATION.md) and [validation](docs/VALIDATION.md).
+The curated edition retains **15 notebooks** from **9 selected source notebooks** out of an original collection of 53. Notebook cell outputs are intentionally kept for interpretation, not as evidence of a clean, repeatable run. See [curation](docs/CURATION.md) and [validation](docs/VALIDATION.md).
 
-## Running the code
+## Running the repository checks
 
-Python **3.10+** is expected by the included utility scripts. Dependencies are inferred from retained imports; this is **not** a historical lockfile.
+This repository is primarily a **research archive**, and the original market data and many intermediate Parquet files are **not included**. You can run the structural checks without those datasets.
 
 ```bash
-python -m venv .venv
-# Linux / macOS:
-source .venv/bin/activate
-# Windows PowerShell:
-# .venv\Scripts\Activate.ps1
-
 python -m pip install -r requirements.txt
 python scripts/check_repository.py
 python scripts/run_existing_checks.py
 ```
 
-`check_repository.py` checks notebook structure, source provenance, syntax, and split ordering. `run_existing_checks.py` exercises **six existing synthetic tests** of All for One's core logic; it does not load market data or reproduce investment results.
+- `check_repository.py` validates notebook structure, code syntax, original-cell provenance, and split-cell ordering.
+- `run_existing_checks.py` runs six original **synthetic logic tests** from All for One. Passing them is **not** a reproduction of historical ML or backtest results.
+- The scripts explicitly read UTF-8 files so they work with notebook text containing Thai or other Unicode characters on Windows.
 
-Some notebook series were split for readability but retain their shared variables. To reconstruct a series in its original order:
+Some notebooks were split for reading but rely on a shared kernel. To combine them in original order **without executing**:
 
 ```bash
 python scripts/run_series.py microstructure --export outputs/microstructure_combined.ipynb
@@ -129,21 +147,25 @@ python scripts/run_series.py barrier_hit --export outputs/barrier_hit_combined.i
 python scripts/run_series.py all_for_one --export outputs/all_for_one_combined.ipynb
 ```
 
-Exporting **does not execute** the notebooks. Open the resulting file in Jupyter after configuring its data dependencies. A full historical run requires datasets and intermediate files excluded from this public repository; see [Data & Running](docs/DATA_AND_RUNNING.md).
+Running the actual research requires the appropriate source data, intermediate artifacts, and environment. See [Data & Running](docs/DATA_AND_RUNNING.md). The dependencies in `requirements.txt` are inferred from imports and are **not a historical lockfile**.
 
-## Research integrity & reproducibility
+## Research integrity
 
-- **Preserved historical outputs are not independently reproduced results.** Some execution counts and cell states reflect exploratory work.
-- **Implementation is not evidence of predictive power.** Temporal splits, purging/embargo, regime labels, and backtesting code must still be assessed in the context of their actual experiments.
-- **Exploratory and out-of-sample results are not interchangeable.** In particular, some neighborhood visualizations use the query points themselves as neighbors.
-- **Synthetic checks do not establish profitability.** Performance also depends on data quality, execution assumptions, selection bias, and unseen market periods.
+The project intentionally distinguishes:
 
-See the [evidence ledger](docs/EVIDENCE_AND_LIMITATIONS.md) and [validation record](docs/VALIDATION.md) for more detail.
+| Evidence type | Interpretation |
+|---|---|
+| **Code-verified** | What the current retained implementation calculates. |
+| **Historical output** | What is visible in old notebook output cells; not automatically reproducible. |
+| **Documented research note** | A conclusion or concern explicitly recorded in the original notes. |
+| **Technical interpretation** | A reasoned explanation, which may need a dedicated empirical test. |
+| **Unverified hypothesis / future work** | A question, proposed fix, or result that has not yet been established. |
+| **Newly reproduced** | A result rerun and actually verified in the current environment. |
 
-## Documentation in progress
+Known challenges include forward-target alignment, temporal state confirmation, shared-kernel dependencies, missing data, overlapping observations, multiple testing, backtest execution assumptions, and selection bias. The website documents these concerns near the corresponding experiments.
 
-A longer **interactive research textbook** is planned to explain the notebooks, features, models, formulas, experiments, and decisions in depth. It will be linked here when the HTML artifact is ready and reviewed. This repository already contains the original research notebooks and a source-grounded reading path.
+This repository is **not financial advice**. No strategy's future profitability is asserted or guaranteed.
 
 ---
 
-*Personal research and education. Nothing here is investment advice or a claim of a live, deployable trading strategy.*
+**TradingUni** · Independent quantitative research · Historical notebooks, transparent evidence, and ongoing methodological improvement.
