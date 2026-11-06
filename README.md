@@ -1,5 +1,8 @@
 # TradingUni
 
+**Live Website — [Read the Interactive Research Textbook (V2.2)](https://dollar-p.github.io/Personal-Financial-Project/)**  
+https://dollar-p.github.io/Personal-Financial-Project/
+
 **A quantitative research journey through market microstructure, machine learning, and regime-aware trading.**
 
 > **Central question:** *Can a useful description of current market conditions help explain when a predictive model or trading strategy works?*
@@ -12,13 +15,13 @@ This repository is a **curated research archive and educational project—not a 
 
 | Start here | What you'll find |
 |---|---|
-| **[Interactive Research Textbook V2.2](docs/index.html)** | Self-contained Thai-language textbook, 13 chapters, formulas, source-linked code walkthroughs, interactive examples, and notebook figures. |
+| **[Interactive Research Textbook V2.2](https://dollar-p.github.io/Personal-Financial-Project/)** | Self-contained Thai-language textbook, 13 chapters, formulas, source-linked code walkthroughs, interactive examples, and notebook figures. |
 | [13-chapter reading guide](docs/READING_PATH.md) | Recommended path through the research notebooks. |
 | [Research process](docs/RESEARCH_PROCESS.md) | Questions, methods, and relationships visible in the source. |
 | [Evidence and limitations](docs/EVIDENCE_AND_LIMITATIONS.md) | What the historical results and available validation can—and cannot—establish. |
 | [คู่มือโครงการภาษาไทย](docs/PROJECT_GUIDE_TH.md) | Thai-language overview of the curated notebooks. |
 
-**Viewing the textbook:** Download `docs/index.html` and open it in a browser, or enable **GitHub Pages** with `main` → `/docs` to serve it as a website. GitHub's normal repository file view may show the HTML source instead of running the website. See [Publishing & GitHub Pages](docs/PUBLISHING.md). Once published, add your actual Pages URL here; it depends on your repository owner/name.
+**Viewing the textbook:** Open the [live website](https://dollar-p.github.io/Personal-Financial-Project/), or download `docs/index.html` to read the self-contained textbook offline. GitHub's repository file viewer cannot render this large HTML document as a webpage. See [Publishing & GitHub Pages](docs/PUBLISHING.md).
 
 ## Research map
 
