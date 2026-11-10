@@ -1,6 +1,6 @@
 # TradingUni
 
-**Live Website — [Read the Interactive Research Textbook (V2.2)](https://dollar-p.github.io/Personal-Financial-Project/)**  
+**Live Website — [Read the Interactive Research Textbook (V3)](https://dollar-p.github.io/Personal-Financial-Project/)**  
 https://dollar-p.github.io/Personal-Financial-Project/
 
 **A quantitative research journey through market microstructure, machine learning, and regime-aware trading.**
@@ -15,7 +15,7 @@ This repository is a **curated research archive and educational project—not a 
 
 | Start here | What you'll find |
 |---|---|
-| **[Interactive Research Textbook V2.2](https://dollar-p.github.io/Personal-Financial-Project/)** | Self-contained Thai-language textbook, 13 chapters, formulas, source-linked code walkthroughs, interactive examples, and notebook figures. |
+| **[Interactive Research Textbook V3](https://dollar-p.github.io/Personal-Financial-Project/)** | Self-contained Thai-language textbook, 13 chapters, formulas, source-linked code walkthroughs, interactive examples, and notebook figures. |
 | [13-chapter reading guide](docs/READING_PATH.md) | Recommended path through the research notebooks. |
 | [Research process](docs/RESEARCH_PROCESS.md) | Questions, methods, and relationships visible in the source. |
 | [Evidence and limitations](docs/EVIDENCE_AND_LIMITATIONS.md) | What the historical results and available validation can—and cannot—establish. |
@@ -101,7 +101,7 @@ The website also contains a searchable **Feature Encyclopedia**, **Models & Algo
 .
 ├── README.md
 ├── docs/
-│   ├── index.html               # Self-contained interactive textbook (V2.2)
+│   ├── index.html               # Self-contained interactive textbook (V3)
 │   ├── .nojekyll                # Publish the HTML unchanged with GitHub Pages
 │   ├── PUBLISHING.md           # Instructions for publishing and updating
 │   ├── READING_PATH.md
